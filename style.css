@@ -1,0 +1,551 @@
+/* TODAS AS PAGINAS */
+
+@font-face {
+    font-family: 'Montserrat', sans-serif;
+    src: url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+}
+
+* {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    color: #EBEBEB;
+    background-color: #323232;
+}
+
+/* animation*/
+#slide-right {
+	animation: slide-right 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+@keyframes slide-right {
+    0% {
+      transform: translateX(-150px);
+    }
+    100% {
+      transform: translateX(0px);
+    }
+  }
+
+/* animation button nav-menu*/
+#scale-out-center {
+	animation: scale-out-center 0.3s cubic-bezier(0.550, 0.085, 0.680, 0.530) reverse both;
+}
+@keyframes scale-out-center {
+    0% {
+      transform: scale(1);
+      opacity: 1;
+    }
+    100% {
+      transform: scale(0);
+      opacity: 1;
+    }
+  }
+  
+  
+/* estilização do scrollbar*/
+::-webkit-scrollbar{
+    width: 8px;
+}
+
+::-webkit-scrollbar-thumb{
+    background: #EBEBEB;
+    border-radius: 6px;
+}
+
+::-webkit-scrollbar-thumb:hover{
+    background: #6D6565;
+}
+
+#menu {
+
+    font-weight: bold;
+    height: 70px;
+    text-align: justify;
+    position: relative;
+    display: flex;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.3);
+    
+}
+#menuID{
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    padding: 0px;
+    
+
+}
+.item-menu {
+    
+    list-style: none;
+    display: inline;  
+    margin: 0px 15px 0px 15px;
+}
+.item-menu-selecionado {
+    
+    list-style: none;
+    display: inline;  
+    margin: 0px 15px 0px 15px;
+}
+
+.btn-menu{
+    width: 150px;
+    padding: 5px 0px 5px 0px;
+    display: inline-block;
+    text-align: center;
+    align-self: auto;
+  }
+
+.btn-menu-selecionado {
+    width: 150px;
+    background-color: #6D6565;
+    border-radius: 50px;
+    padding: 8px 0px 8px 0px;
+    display: inline-block;
+    text-align: center;
+    align-self: auto;
+    transition: 200ms;
+  }
+.item-menu >  a:hover {
+    color: white;
+    text-shadow: 0 0 4px #fff;
+    transition: 400ms;
+}
+
+.item-menu-selecionado >  a:hover {
+    color: black;
+    transition: all 0.3s ease-in-out 0s;
+}
+
+header {
+
+    background-color: #211E1E;
+    justify-content: center;
+    display: inline;
+    
+    
+}
+
+.fundo-footer{
+    
+    width: 100%;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    background: #211E1E;
+    color: #EBEBEB;
+    font-size: 18px;
+    
+}
+
+.p-footer{
+    padding: 20px;
+    display: inline;
+    text-align: justify;
+    
+}
+
+.text-footer{
+    
+    text-align: center;
+    align-items: center;
+}
+
+/* index */
+
+
+
+
+
+a {
+    position: relative;
+    color: #EBEBEB;
+    text-decoration: none;
+    padding-bottom: 0px;
+    margin-left: -10px;
+    margin-right: -10px;
+    text-align: center;
+}
+
+a:hover {
+    color: rgb(109, 109, 109);
+    transition: all 0.3s ease-in-out 0s;
+}
+  
+a:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    bottom: 0;
+    left: 0;
+    background-color: grey;
+    visibility: hidden;
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s;
+}
+
+.parallax {
+        /* Coloque a imagem a ser usada como background */
+        background-image: url("imagens/beatles-home.jpg");
+         
+        /* Defina uma altura para a visão que o usuário terá da imagem */
+        min-height: 50vw;
+         
+        /* defina o background como fixo e posicione a imagem */
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position-y: 0px;
+}
+
+.imageHome {
+    width: 100%;
+}
+
+
+.integrantes{
+    
+    height: 100%;
+    width: 100%;
+    color: #EBEBEB;
+    text-align: center;
+    background: #211E1E;
+    padding-bottom: 0;
+
+}
+
+.fotos-integrantes {
+    
+    display: inline-table;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 50px;
+
+}
+
+.centralizarFotos {
+    background-color: #211E1E;
+    justify-content: center;
+}
+
+.titulo{ 
+    padding: 40px;
+    margin-top: -5px;
+}
+.titulo>h1{
+    margin-top: -5px;
+    margin-bottom: 0px;
+    padding: 40px;
+}
+
+.nomes{
+    display: grid;
+    text-align: center;
+    font-weight: bold;
+}
+
+.johnInstruments {
+    margin: 0;
+    padding-top: 5px;
+    border: 0;
+}
+.paulInstruments {
+    margin: 0;
+    padding-top: 5px;
+    border: 0;
+}
+.ringoInstruments {
+    margin: 0;
+    padding-top: 5px;
+    border: 0;
+}
+.georgeInstruments {
+    margin: 0;
+    padding-top: 5px;
+    border: 0;
+}
+
+.div-texto{
+    background-color: #323232;
+}
+
+.texto {
+    background-color: #323232;
+    padding-top: 0px;
+    width: 80vw ;
+    margin: auto;
+    text-align: justify;
+    font-size: 24px;
+    color: #EBEBEB;
+}
+
+.textoCima {
+    background-color: #323232;
+    padding-top: 40px;
+    padding-bottom: 20px;
+    width: 80vw ;
+    margin: auto;
+    text-align: justify;
+    font-size: 24px;
+    color: #EBEBEB;
+}
+
+.textoBaixo {
+    background-color: #323232;
+    padding-top: 20px;
+    width: 80vw ;
+    margin: auto;
+    padding-bottom: 40px;
+    text-align: justify;
+    font-size: 24px;
+    color: #EBEBEB;
+}
+
+/* About Us */
+
+#textoAboutUs{
+    background-color: #323232;
+    padding: 0px;
+    margin-right: 0px;
+    margin: 4vw 8vw 4vw 8vw;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    font-size: 26px;
+    color: #EBEBEB;
+    
+}
+
+.caixaAboutUs{
+    background-color: #211E1E;
+    margin-right: 8vw;
+    margin-left: 8vw;
+    border-radius: 30px;
+    height: 580px;
+    text-align: center;
+    margin-bottom: 4vw;
+}
+
+#textoAboutUs > p{
+    margin: 4px 0px 4px 0px;
+}
+
+#imagemJoao{
+    height: 250px;
+    width: 250px;
+    margin: 2vw 0vw 1vw 0vw;
+    border-radius: 20px;
+}
+
+#imagemLyzzandro{
+    height: 250px;
+    width: 250px;
+    margin: 2vw 0vw 1vw 0vw;
+    border-radius: 20px;
+}
+
+#nomeJoao{
+    margin-top: 2vw;
+    margin-bottom: 2vw;
+}
+
+#nomeLyzzandro{
+    margin-top: 2vw;
+    margin-bottom: 2vw;
+}
+
+#texto > p {
+    font-size: 20px;
+    margin: 0vw 12vw 0vw 12vw;
+}
+
+.redes {
+    
+    list-style: none;
+    display: inline;
+    margin: 0.75vw;
+}
+
+.formulario{
+    margin: auto;
+    margin-top: 80px;
+    margin-bottom: 80px;
+    display: flex;
+    width: 70%;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px 30px 30px 30px;
+    box-shadow: -4px 4px 30px #000000;
+}
+
+.div-form{
+    display: flex;
+    height: 80vh;
+    width: 80vw;
+    border-radius: 0px 30px 30px 0px;
+    background-color: white;
+    justify-content: center;
+    align-items: center; 
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+}
+
+.inputs{
+    display: flex; 
+    flex-direction: column;
+}
+
+#text-focus-in {
+	-webkit-animation: text-focus-in 0.5s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+	        animation: text-focus-in 0.5s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+}
+
+@-webkit-keyframes text-focus-in {
+    0% {
+      -webkit-filter: blur(12px);
+              filter: blur(12px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-filter: blur(0px);
+              filter: blur(0px);
+      opacity: 1;
+    }
+  }
+  @keyframes text-focus-in {
+    0% {
+      -webkit-filter: blur(12px);
+              filter: blur(12px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-filter: blur(0px);
+              filter: blur(0px);
+      opacity: 1;
+    }
+  }
+  
+  
+
+.text-form{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    font-size: 3vh;
+    font-weight: 400;
+    color: #6D6565;
+    width: 24vw;
+    padding: 20px 8px 10px 0px;
+}
+
+.button-send{
+    font-size: 2vh;
+    border-radius: 30px;
+    font-weight: 600;
+    border: none;
+    width: 10vw;
+    height: 4vh;
+    color: #EBEBEB;
+    background-color: #6D6565;
+    margin:  auto;
+    margin-top: 40px;
+    box-shadow: -3px 3px 5px rgb(85, 80, 80, 0.8);
+}
+
+.button-send:hover{
+
+    color: #EBEBEB;
+    background-color: #5f5959;
+    margin:  auto;
+    margin-top: 40px;
+    cursor: pointer;
+}
+
+.input-name{
+    padding-left: 40px;
+    padding-right: 40px;
+    font-size: 2vh;
+    height: 8vh;
+    border-radius: 30px;
+    border: none;
+    outline: none;
+    background-color: #EBEBEB;
+}
+
+.input-name::placeholder{
+    font-size: 2vh;
+    border: none;
+    color: rgba(109, 101, 101, 0.5);
+}
+
+.input-email{
+    padding-left: 40px;
+    padding-right: 40px;
+    font-size: 2vh;
+    height: 8vh;
+    border-radius: 30px;
+    border: none;
+    outline: none;
+    background-color: #EBEBEB;
+}
+
+.input-email::placeholder{
+    font-size: 2vh;
+    border: none;
+    color: rgba(109, 101, 101, 0.5);
+}
+
+.input-menssage{
+    padding: 30px 40px 0px 40px;
+    font-size: 2vh;
+    height: 14vh;
+    border-radius: 30px;
+    border: none;
+    outline: none;
+    background-color: #EBEBEB;
+}
+
+.input-menssage::placeholder{
+    font-size: 2vh;
+    border: none;
+    color: rgba(109, 101, 101, 0.5);
+}
+
+.banner{
+    height: 80vh;
+    width: 80vw;
+    border-radius: 30px 0px 0px 30px;
+    background-color: white;
+    justify-content: center;
+    align-items: center;
+    background: url(imagens/banner-form.jpg) no-repeat center center;
+    background-size: cover;
+    background-position-x: 0vw;
+}
+
+.text-send{
+    display: flex;
+    font-size: 8vh;
+    padding: 100px 0px 0px 0px;
+    min-height: 100%;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: auto;
+}
+
+.icon-image{
+    width: 1.2vw;
+    padding: 0vw 0.6vw 0vw 1vw;
+    
+}
