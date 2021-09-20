@@ -446,6 +446,7 @@ a:before {
     color: #6D6565;
     width: 24vw;
     padding: 20px 8px 10px 0px;
+    
 }
 
 .button-send{
@@ -459,7 +460,9 @@ a:before {
     background-color: #6D6565;
     margin:  auto;
     margin-top: 40px;
-    box-shadow: -3px 3px 5px rgb(85, 80, 80, 0.8);
+    box-shadow: 4px 10px 30px rgba(109, 141, 173, 0.45);
+    
+    
 }
 
 .button-send:hover{
@@ -469,6 +472,7 @@ a:before {
     margin:  auto;
     margin-top: 40px;
     cursor: pointer;
+    
 }
 
 .input-name{
@@ -480,6 +484,7 @@ a:before {
     border: none;
     outline: none;
     background-color: #EBEBEB;
+    box-shadow: 4px 8px 30px rgba(109, 141, 173, 0.15);
 }
 
 .input-name::placeholder{
@@ -497,6 +502,7 @@ a:before {
     border: none;
     outline: none;
     background-color: #EBEBEB;
+    box-shadow: 4px 8px 30px rgba(109, 141, 173, 0.15);
 }
 
 .input-email::placeholder{
@@ -513,6 +519,7 @@ a:before {
     border: none;
     outline: none;
     background-color: #EBEBEB;
+    box-shadow: 4px 8px 30px rgba(109, 141, 173, 0.15);
 }
 
 .input-menssage::placeholder{
@@ -544,8 +551,176 @@ a:before {
     margin: auto;
 }
 
+
 .icon-image{
     width: 1.2vw;
     padding: 0vw 0.6vw 0vw 1vw;
     
 }
+
+.capa-discography{
+    display: flex;
+    flex-direction: column;
+    width: 99vw;
+    justify-content: center;
+    align-items: center;
+    height: 110vh;
+    
+}
+
+#capa-discography{
+    margin: 0;
+    padding: 0;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100vw;
+    
+
+}
+
+.texto-discography{
+
+    transform: translateY(-70vh);
+    background: linear-gradient(180deg, rgba(50, 50, 50, 0) 33.87%, #211E1E 76.9%);
+    width: 100vw;
+    height: 70vh;
+}
+
+.texto-discography > p{
+    width: 100vw;
+    display: flex;
+    padding-top: 50vh;
+    text-align: center;
+    justify-content: center;
+    font-size: 10vh;
+}
+
+.tracking-in-expand {
+	-webkit-animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+	        animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+}
+
+@-webkit-keyframes tracking-in-expand {
+    0% {
+      letter-spacing: -0.5em;
+      opacity: 0;
+    }
+    40% {
+      opacity: 0.6;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  @keyframes tracking-in-expand {
+    0% {
+      letter-spacing: -0.5em;
+      opacity: 0;
+    }
+    40% {
+      opacity: 0.6;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+.text-history{
+    background-color: #323232;
+    padding: 80px 0px 80px 0px;
+    width: 80vw ;
+    margin: auto;
+    text-align: justify;
+    font-size: 24px;
+    color: #EBEBEB;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.text-history > p{
+    padding: 20px 0px 20px 0px;
+}
+
+.text-history > h2{
+    padding: 20px 0px 20px 0px;
+    text-align: center;
+}
+
+.text-history > :nth-child(1){
+    padding: 0px 0px 20px 0px;
+}
+
+.imagens-history{
+      display: inline-flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin: auto;
+}
+
+.imagens-history > p{
+      font-size: 0.8em;
+  }
+
+.imagem-history{
+    width: 40vw;
+  }
+
+.discs-collums{
+    display: flex;
+    margin: 0em 10em 0em 10em;
+    justify-content: center;
+    align-items: center;
+  }
+
+.div-1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+}
+
+.div-2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+}
+
+.div-3{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+}
+
+.imagens-discography{
+    width: 20vw;
+    border-radius: 1em;
+}
+
+.albuns{
+    display: flex;
+    flex-direction: column;
+    margin: 5em 0em 5em 0em;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+.nome-album{
+    font-weight: 800;
+    padding: 0.3em 0em 0.3em 0em;
+}
+
+.ano-album{
+    font-weight: 600;
+}
+
+
