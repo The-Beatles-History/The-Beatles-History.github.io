@@ -1,91 +1,140 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0"
+		/>
+		<link rel="stylesheet" href="../style.css" />
+		<link rel="shortcut icon" href="../imagens/favicon.ico" />
+		<title>Contact Us</title>
+	</head>
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../style.css">
-    <link rel="shortcut icon" href="../imagens/favicon.ico">
-    <title>Contact Us</title>
-</head>
+	<body>
+		<header id="menu">
+			<ul id="menuID">
+				<li class="item-menu">
+					<a href="../index.html">
+						<div class="btn-menu">HOME</div>
+					</a>
+				</li>
+				<li class="item-menu">
+					<a href="../discography/discography.html">
+						<div class="btn-menu">DISCOGRAPHY</div>
+					</a>
+				</li>
+				<li class="item-menu">
+					<a href="../history/history.html">
+						<div class="btn-menu">HISTORY</div>
+					</a>
+				</li>
+				<li class="item-menu">
+					<a href="../contributions/contributions.html">
+						<div class="btn-menu">CONTRIBUTIONS</div>
+					</a>
+				</li>
+				<li class="item-menu">
+					<a href="../galery/galery.html">
+						<div class="btn-menu">GALERY</div>
+					</a>
+				</li>
+				<li class="item-menu">
+					<a href="../about-us/about-us.html">
+						<div class="btn-menu">ABOUT US</div>
+					</a>
+				</li>
+				<li class="item-menu-selecionado">
+					<a href="../contact-us/contac-us.html">
+						<div
+							id="scale-out-center"
+							class="btn-menu-selecionado"
+						>
+							CONTACT US
+						</div>
+					</a>
+				</li>
+				<li class="item-menu">
+					<a href="../social-media/social-media.html">
+						<div class="btn-menu">SOCIAL MEDIA</div>
+					</a>
+				</li>
+			</ul>
+		</header>
 
-<body>
-    <header id="menu">
-        <ul id="menuID">
-            <li class="item-menu"><a href="../index.html">
-                    <div class="btn-menu">HOME</div>
-                </a></li>
-            <li class="item-menu"><a href="../discography/discography.html">
-                    <div class="btn-menu">DISCOGRAPHY</div>
-                </a></li>
-            <li class="item-menu"><a href="../history/history.html">
-                    <div class="btn-menu">HISTORY</div>
-                </a></li>
-            <li class="item-menu"><a href="../contributions/contributions.html">
-                    <div class="btn-menu">CONTRIBUTIONS</div>
-                </a></li>
-            <li class="item-menu"><a href="../galery/galery.html">
-                    <div class="btn-menu">GALERY</div>
-                </a></li>
-            <li class="item-menu"><a href="../about-us/about-us.html">
-                    <div class="btn-menu">ABOUT US</div>
-                </a></li>
-            <li class="item-menu-selecionado"><a href="../contact-us/contac-us.html">
-                    <div id="scale-out-center" class="btn-menu-selecionado">CONTACT US</div>
-                </a></li>
-            <li class="item-menu"><a href="../social-media/social-media.html">
-                    <div class="btn-menu">SOCIAL MEDIA</div>
-                </a></li>
-        </ul>
-    </header>
+		<div class="formulario">
+			<div class="banner">
+				<div class="text-send" id="text-focus-in">
+					Send your message!
+				</div>
+			</div>
+			<div class="div-form">
+				<form
+					class="form"
+					action="https://formspree.io/f/xbjqwgrd"
+					method="post"
+				>
+					<div class="inputs">
+						<div class="text-form">
+							<img
+								class="icon-image"
+								src="../imagens/icone-person.svg"
+							/>
+							<label for="nome">Name</label>
+						</div>
+						<input
+							class="input-name"
+							placeholder="Write your name..."
+							name="nome"
+							type="text"
+						/>
+					</div>
+					<div class="inputs">
+						<div class="text-form">
+							<img
+								class="icon-image"
+								src="../imagens/icone-email.svg"
+							/>
+							<label for="email">E-mail</label>
+						</div>
 
+						<input
+							class="input-email"
+							placeholder="Write your e-mail..."
+							name="email"
+							type="email"
+						/>
+					</div>
+					<div class="inputs">
+						<div class="text-form">
+							<img
+								class="icon-image"
+								src="../imagens/icone-menssage.svg"
+							/>
+							<label for="msg">Message</label>
+						</div>
+						<textarea
+							class="input-menssage"
+							placeholder="Write your message..."
+							name="mensagem"
+						></textarea>
+					</div>
+					<button class="button-send" type="submit">
+						Send
+					</button>
+				</form>
+			</div>
+		</div>
 
-    <div class="formulario">
-        <div class="banner">
-            <div class="text-send" id="text-focus-in">
-                Send your menssage
-            </div>
-        </div>
-        <div class="div-form">
-            <form class="form" action="https://formspree.io/f/xbjqwgrd" method="post">
-                <div class="inputs">
-                    <div class="text-form">
-                        <img class="icon-image" src="../imagens/icone-person.svg">
-                        <label for="nome">Name</label>
-                    </div>
-                    <input class="input-name" placeholder="Write your name..." name="nome" type="text" />
-                </div>
-                <div class="inputs">
-                    <div class="text-form">
-                        <img class="icon-image" src="../imagens/icone-email.svg">
-                        <label for="email">E-mail</label>
-                    </div>
-
-                    <input class="input-email" placeholder="Write your e-mail..." name="email" type="email" />
-                </div>
-                <div class="inputs">
-                    <div class="text-form">
-                        <img class="icon-image" src="../imagens/icone-menssage.svg">
-                        <label for="msg">Menssage</label>
-                    </div>
-                    <textarea class="input-menssage" placeholder="Write your menssage..." name="mensagem"></textarea>
-                </div>
-                <button class="button-send" type="submit">Send</button>
-            </form>
-        </div>
-    </div>
-
-    <footer class="fundo-footer">
-        <div class="text-footer">
-            <p class="p-footer">© 2021</p>
-            <p class="p-footer">|</p>
-            <p class="p-footer">beatleshistory.com</p>
-            <p class="p-footer">|</p>
-            <p class="p-footer">Termos de Uso</p>
-        </div>
-    </footer>
-
-</body>
-
+		<footer class="fundo-footer">
+			<div class="text-footer">
+				<p class="p-footer">© 2021</p>
+				<p class="p-footer">|</p>
+				<p class="p-footer">beatleshistory.com</p>
+				<p class="p-footer">|</p>
+				<p class="p-footer">Termos de Uso</p>
+			</div>
+		</footer>
+	</body>
 </html>
